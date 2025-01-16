@@ -26,7 +26,7 @@ fn main() {
             "region.RegionRequest.body",
             "#[derive(strum_macros::AsRefStr)]",
         )
-        .compile(
+        .compile_protos(
             &[
                 "proto/gogo.proto",
                 "proto/logproto.proto",
