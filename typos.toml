@@ -1,0 +1,9 @@
+[default.extend-words]
+Pn = "Pn"
+ue = "ue"
+worl = "worl"
+ot = "ot"
+unqualifed = "unqualifed"
+
+[files]
+# extend-exclude = []
