@@ -28,12 +28,14 @@ fn main() {
         )
         .compile_protos(
             &[
-                "proto/gogo.proto",
-                "proto/logproto.proto",
-                "proto/push.proto",
-                "proto/stats.proto",
+                // Loki proto
+                "proto/loki/logproto.proto",
+                "proto/loki/push.proto",
+                "proto/loki/stats.proto",
+                // Jaeger proto
+                "proto/jaeger/api_v2/model.proto",
             ],
-            &["proto"],
+            &["proto/loki", "proto/jaeger", "proto"],
         )
         .expect("compile proto");
 }

@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package logproto;
 
-import "gogo.proto";
+import "gogoproto/gogo.proto";
 import "google/protobuf/timestamp.proto";
 
 option go_package = "github.com/grafana/loki/pkg/push";
