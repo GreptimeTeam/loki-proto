@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package stats;
 
-import "gogoproto/gogo.proto";
+import "gogo.proto";
 
 option go_package = "github.com/grafana/loki/v3/pkg/logqlmodel/stats";
 option (gogoproto.marshaler_all) = true;
