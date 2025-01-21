@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package logproto;
 
-import "gogoproto/gogo.proto";
+import "gogo.proto";
 import "google/protobuf/timestamp.proto";
 import "stats.proto";
 import "push.proto";
