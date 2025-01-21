@@ -12,10 +12,18 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-pub mod logproto {
-    tonic::include_proto!("logproto");
+pub mod loki {
+    pub mod logproto {
+        tonic::include_proto!("logproto");
+    }
+
+    pub mod stats {
+        tonic::include_proto!("stats");
+    }
 }
 
-pub mod stats {
-    tonic::include_proto!("stats");
+pub mod jaeger {
+    pub mod api_v2 {
+        tonic::include_proto!("jaeger.api_v2");
+    }
 }
