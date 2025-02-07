@@ -12,6 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+pub use prost_types;
 pub mod logproto {
     tonic::include_proto!("logproto");
 }
