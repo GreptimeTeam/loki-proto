@@ -20,7 +20,7 @@ fn main() {
             .expect("cargo built-in env value 'OUT_DIR' must be set during compilation"),
     );
 
-    tonic_build::configure()
+    tonic_prost_build::configure()
         .file_descriptor_set_path(out_dir.join("greptime_loki_grpc_desc.bin"))
         .enum_attribute(
             "region.RegionRequest.body",
