@@ -14,7 +14,7 @@ env:
 jobs:
   typos:
     name: Spell Check with Typos
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: crate-ci/typos@master
@@ -22,7 +22,7 @@ jobs:
   check:
     name: Check
     if: github.event.pull_request.draft == false
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
@@ -40,7 +40,7 @@ jobs:
   fmt:
     name: Rustfmt
     if: github.event.pull_request.draft == false
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
@@ -59,7 +59,7 @@ jobs:
   clippy:
     name: Clippy
     if: github.event.pull_request.draft == false
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
